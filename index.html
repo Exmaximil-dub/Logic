@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Силлогизмы — Анализатор и Фигуры</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Фоновые декорации ===== -->
+<div class="bg-deco bg-stars"></div>
+<div class="bg-deco bg-books"></div>
+<div class="bg-deco bg-water"></div>
+<div class="bg-deco bg-whale">
+  <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30,100 Q55,45 135,50 Q205,55 245,85 L290,60 L278,105 Q245,140 150,138 Q65,132 30,100 Z" fill="currentColor"/>
+    <circle cx="105" cy="82" r="5" fill="#fff"/>
+    <path d="M278,105 L300,82 L306,118 Z" fill="currentColor"/>
+    <path d="M125,50 Q122,28 135,14 M130,50 Q140,26 155,18" stroke="currentColor" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  </svg>
+</div>
+
+<!-- Коты и голуби для EIO-3 -->
+<div class="bg-deco bg-pigeons">
+  <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+    <g fill="currentColor">
+      <g transform="translate(90,70)">
+        <ellipse cx="0" cy="0" rx="18" ry="9"/>
+        <circle cx="18" cy="-3" r="6.5"/>
+        <polygon points="24,-3 32,-1 24,1"/>
+        <path d="M-14,0 Q-26,-11 -18,-18 L-4,-5 Z"/>
+        <path d="M-14,0 Q-26,11 -18,18 L-4,5 Z"/>
+      </g>
+      <g transform="translate(390,100) scale(-1,1)">
+        <ellipse cx="0" cy="0" rx="18" ry="9"/>
+        <circle cx="18" cy="-3" r="6.5"/>
+        <polygon points="24,-3 32,-1 24,1"/>
+        <path d="M-14,0 Q-26,-11 -18,-18 L-4,-5 Z"/>
+        <path d="M-14,0 Q-26,11 -18,18 L-4,5 Z"/>
+      </g>
+      <g transform="translate(255,45) scale(0.65)">
+        <ellipse cx="0" cy="0" rx="18" ry="9"/>
+        <circle cx="18" cy="-3" r="6.5"/>
+        <polygon points="24,-3 32,-1 24,1"/>
+        <path d="M-14,0 Q-26,-11 -18,-18 L-4,-5 Z"/>
+        <path d="M-14,0 Q-26,11 -18,18 L-4,5 Z"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<div class="bg-deco bg-cats">
+  <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+    <g fill="currentColor">
+      <path d="M55,190 Q45,155 60,125 Q50,105 55,85 L65,110 L90,105 L95,75 Q115,85 115,115 Q130,135 125,165 Q130,190 125,190 Z"/>
+      <path d="M125,155 Q150,135 145,115 Q140,100 150,95" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g fill="currentColor" transform="translate(320,0)">
+      <path d="M55,190 Q45,155 60,125 Q50,105 55,85 L65,110 L90,105 L95,75 Q115,85 115,115 Q130,135 125,165 Q130,190 125,190 Z"/>
+      <path d="M125,155 Q150,135 145,115 Q140,100 150,95" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </svg>
+</div>
+
+<!-- Геометрические фигуры для AOO-2 -->
+<div class="bg-deco bg-shapes">
+  <div class="shape square"   style="--x: 6%;  --size: 58px; --dur: 17s; --delay: 0s;    --rot: 15deg;  --color: #e8c860;"></div>
+  <div class="shape triangle" style="--x: 16%; --size: 72px; --dur: 21s; --delay: 3s;    --rot: -20deg; --color: #d4a020;"></div>
+  <div class="shape hexagon"  style="--x: 26%; --size: 50px; --dur: 15s; --delay: 6s;    --rot: 0deg;   --color: #b8c870;"></div>
+  <div class="shape square"   style="--x: 36%; --size: 84px; --dur: 19s; --delay: 1.5s;  --rot: 30deg;  --color: #e0b840;"></div>
+  <div class="shape triangle" style="--x: 46%; --size: 46px; --dur: 13s; --delay: 8s;    --rot: 10deg;  --color: #d8a848;"></div>
+  <div class="shape hexagon"  style="--x: 56%; --size: 66px; --dur: 22s; --delay: 4.5s;  --rot: 45deg;  --color: #c9b85a;"></div>
+  <div class="shape square"   style="--x: 66%; --size: 52px; --dur: 16s; --delay: 2s;    --rot: -12deg; --color: #e8c860;"></div>
+  <div class="shape triangle" style="--x: 76%; --size: 78px; --dur: 20s; --delay: 7s;    --rot: 25deg;  --color: #d4a020;"></div>
+  <div class="shape hexagon"  style="--x: 86%; --size: 60px; --dur: 18s; --delay: 5s;    --rot: -8deg;  --color: #b8c870;"></div>
+  <div class="shape square"   style="--x: 93%; --size: 44px; --dur: 14s; --delay: 9s;    --rot: 40deg;  --color: #e0b840;"></div>
+  <div class="shape triangle" style="--x: 10%; --size: 40px; --dur: 12s; --delay: 11s;   --rot: -30deg; --color: #d8a848;"></div>
+  <div class="shape hexagon"  style="--x: 61%; --size: 54px; --dur: 23s; --delay: 10s;   --rot: 20deg;  --color: #c9b85a;"></div>
+</div>
+
+<nav class="main-nav">
+  <a href="#analyzer" class="nav-link" data-view="analyzer">Анализатор</a>
+  <a href="#figures" class="nav-link" data-view="figures">Фигуры и модусы</a>
+</nav>
+
+<section id="analyzer" class="view active">
+  <div class="container">
+    <h1>Анализатор силлогизмов</h1>
+    <p class="subtitle">Введите две посылки и заключение — определю S, P, M, фигуру, модус и построю круги Эйлера.</p>
+    <textarea id="input" placeholder="Например:&#10;Все политологи изучают политические процессы.&#10;Некоторые студенты являются политологами.&#10;Следовательно, некоторые студенты изучают политические процессы."></textarea>
+    <div class="examples">
+      <button class="example-btn" data-ex="barbara">Barbara</button>
+      <button class="example-btn" data-ex="darii">Darii</button>
+      <button class="example-btn" data-ex="festino">Festino</button>
+      <button class="example-btn" data-ex="darapti">Darapti</button>
+      <button class="example-btn" data-ex="ferio">Ferio</button>
+    </div>
+    <button id="analyze-btn" class="primary-btn">Анализировать</button>
+    <div id="result" class="result hidden">
+      <div class="terms-grid">
+        <div class="term-card"><span>S — субъект</span><strong id="term-s">—</strong></div>
+        <div class="term-card"><span>P — предикат</span><strong id="term-p">—</strong></div>
+        <div class="term-card"><span>M — средний термин</span><strong id="term-m">—</strong></div>
+      </div>
+      <div class="info-grid">
+        <div class="info-card"><span>Фигура</span><strong id="fig-info">—</strong></div>
+        <div class="info-card"><span>Модус</span><strong id="modus-info">—</strong></div>
+      </div>
+      <h3>Круги Эйлера</h3>
+      <div class="euler-wrap"><svg id="euler" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"></svg></div>
+    </div>
+  </div>
+</section>
+
+<section id="figures" class="view">
+  <div class="container">
+    <div id="figures-intro">
+      <h1>Четыре фигуры категорического силлогизма</h1>
+      <p class="subtitle">Нажмите на модус — увидите пример, разбор и уникальную стилистику сайта.</p>
+    </div>
+    <div id="figures-grid" class="figures-grid"></div>
+    <div id="modus-detail" class="modus-detail"></div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
